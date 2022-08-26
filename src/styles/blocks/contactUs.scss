@@ -5,10 +5,11 @@
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    gap: 160px;
+    gap: 30px;
 
     @include onDesctop {
       flex-direction: row;
+      gap: 160px;
     }
   }
   &__info {
