@@ -1,0 +1,33 @@
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 214px;
+  height: 46px;
+  background: rgba(58, 160, 182, 0.5);
+  border: 1px solid #fff;
+  border-radius: 35px;
+
+  &__link {
+    width: 214px;
+    display: block;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 46px;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    &__footer {
+      color: #c8972c;
+    }
+  }
+
+  &__submit {
+    background: linear-gradient(223.08deg, #ffc953 6.11%, #c8972c 97.63%);
+  }
+
+  &__footer {
+    background-color: #fff;
+  }
+}

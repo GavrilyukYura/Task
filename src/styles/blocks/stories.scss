@@ -1,0 +1,12 @@
+.stories {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+  padding-top: 22px;
+  text-align: start;
+
+  @include onDesctop {
+    flex-direction: row;
+  }
+}

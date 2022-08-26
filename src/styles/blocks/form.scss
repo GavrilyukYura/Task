@@ -1,0 +1,38 @@
+.form {
+  display: grid;
+  font-family: inherit;
+  width: 100%;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 17px;
+  color: #000;
+
+  @include onDesctop {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 70px;
+  }
+
+  &__textarea {
+    font-family: inherit;
+    grid-column-start: 1;
+    grid-column-end: -1;
+    resize: none;
+    padding: 5px;
+    border: none;
+    border-bottom: 1px solid #1f2d3a;
+    background: #f7f7f7;
+    color: #000;
+  }
+
+  &__imput {
+    font-family: inherit;
+    box-sizing: border-box;
+    height: 38px;
+    width: 100%;
+    padding: 5px;
+    border: none;
+    border-bottom: 1px solid #1f2d3a;
+    background: #f7f7f7;
+    color: #000;
+  }
+}

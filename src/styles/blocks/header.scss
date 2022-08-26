@@ -1,0 +1,62 @@
+.header {
+  background-image: url(./images/mobileHeader.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 1500px;
+
+  @include onDesctop {
+    background-image: url(./images/header.png);
+    height: 1000px;
+  }
+
+  &__logo {
+    display: block;
+    width: 137px;
+    height: 40px;
+    margin-bottom: 61px;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 43px;
+    line-height: 52px;
+    margin: 0 0 21px;
+
+    @include onDesctop {
+      font-size: 80px;
+      line-height: 80px;
+    }
+  }
+
+  &__text {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 22px;
+
+    @include onDesctop {
+      font-size: 28px;
+      line-height: 27px;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+
+    @include onDesctop {
+      flex-direction: row;
+      justify-content: space-between;
+      gap: 150px;
+    }
+  }
+
+  &__button {
+    margin-top: 75px;
+
+    @include onDesctop {
+      margin-top: 40px;
+    }
+  }
+
+}

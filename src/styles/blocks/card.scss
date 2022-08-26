@@ -1,0 +1,39 @@
+.card {
+  box-sizing: border-box;
+  width: 280px;
+  height: 373px;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  padding: 40px;
+
+  @include onDesctop {
+    width: 370px;
+    height: 492px;
+  }
+
+  &--first {
+    background-image: url(./images/first.png);
+  }
+
+  &--second {
+    background-image: url(./images/second.png);
+  }
+
+  &--third {
+    background-image: url(./images/third.png);
+  }
+
+  &__text {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 28px;
+    margin-bottom: 8px;
+  }
+
+  &__title {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+  }
+}

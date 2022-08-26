@@ -1,0 +1,35 @@
+.contactUs {
+  background-color: #f7f7f7;
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 160px;
+
+    @include onDesctop {
+      flex-direction: row;
+    }
+  }
+  &__info {
+    width: 100%;
+    &-title {
+      font-weight: 500;
+      font-size: 32px;
+      line-height: 48px;
+      text-transform: capitalize;
+      color: #1f2d3a;
+    }
+
+    &-text {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 22px;
+      color: #8095a4;
+    }
+
+    &-link {
+      color: #000;
+    }
+  }
+}

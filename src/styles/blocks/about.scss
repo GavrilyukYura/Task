@@ -1,0 +1,31 @@
+.about {
+  margin-top: 200px;
+  width: 100%;
+  text-align: start;
+
+  @include onDesctop {
+    margin-top: 140px;
+    width: 530px;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 60px;
+    color: #c8972c;
+    text-transform: uppercase;
+  }
+
+  &__subtitle {
+    margin: 0 24px;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 42px;
+  }
+
+  &__text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
